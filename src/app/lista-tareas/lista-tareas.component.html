@@ -1,0 +1,19 @@
+<app-input-boton (nuevaTareaEvent)="agregarTarea($event)"></app-input-boton>
+
+<div class="contenedor">
+    <ul>
+        <li *ngFor="let tarea of tareas">
+            <div class="inputLista">
+                <div class="inputText">
+                    <input type="checkbox" (click)="tareaCompletada(completarTarea) ">
+                    <p  #completarTarea >{{tarea}}</p> 
+                </div>
+                <button type="button" (click)="eliminarTarea(tarea)">
+                    <i class="gg-trash-empty"></i>
+                </button>
+            </div>
+        </li>
+    </ul>   
+</div>
+
+

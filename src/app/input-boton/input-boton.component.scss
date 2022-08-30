@@ -1,0 +1,35 @@
+@import "/src/variables.scss"; 
+
+.contenedor{
+    display: flex;
+    justify-content: space-between;
+    margin: 0px 24px;
+    background-color: $negro10;
+    border-radius: 4px;
+    
+    position: sticky;
+    top: 16px;
+    backdrop-filter: blur(5px);
+
+    input{
+        font-size: 16px;
+        background-color: transparent;
+        border: red solid 1px;
+        border:none;
+        margin: 8px;
+    }
+    button{
+        margin: 8px;
+    }
+}
+
+@media screen and (min-width: $ancho){
+    .contenedor{
+        width: $ancho;
+        input{
+            font-size: 24px;
+        }
+    }
+
+}
+

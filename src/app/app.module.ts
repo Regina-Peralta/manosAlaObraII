@@ -6,7 +6,9 @@ import { AppComponent } from './app.component';
 import { TituloComponent } from './titulo/titulo.component';
 import { InputBotonComponent } from './input-boton/input-boton.component';
 import { ListaTareasComponent } from './lista-tareas/lista-tareas.component';
-import { ItemCounterComponent } from './item-counter/item-counter.component';
+import { IconoCheckComponent } from './input-boton/icono-check/icono-check.component';
+import { DividerComponent } from './divider/divider.component';
+
 
 
 @NgModule({
@@ -15,7 +17,8 @@ import { ItemCounterComponent } from './item-counter/item-counter.component';
     TituloComponent,
     InputBotonComponent,
     ListaTareasComponent,
-    ItemCounterComponent,
+    IconoCheckComponent,
+    DividerComponent,
   ],
   imports: [
     BrowserModule,

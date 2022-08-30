@@ -1,19 +1,33 @@
 <app-input-boton (nuevaTareaEvent)="agregarTarea($event)"></app-input-boton>
 
+<app-divider></app-divider>
+
 <div class="contenedor">
     <ul>
         <li *ngFor="let tarea of tareas">
-            <div class="inputLista">
-                <div class="inputText">
-                    <input type="checkbox" (click)="tareaCompletada(completarTarea) ">
-                    <p  #completarTarea >{{tarea}}</p> 
-                </div>
-                <button type="button" (click)="eliminarTarea(tarea)">
-                    <i class="gg-trash-empty"></i>
-                </button>
+            <div>
+                  <div>
+                        <input type="checkbox"  (click)="tareaCompletada(completarTarea)">
+                        <p  #completarTarea class="tarea">{{tarea}}</p>
+                  </div>
+                  <div>
+                      <button>
+                          <i class='fas fa-clipboard'></i>
+                      </button>
+                      <button>
+                          <i class="fa fa-share-alt"></i>
+                      </button>
+                      <button type="button" (click)="eliminarTarea(tarea)">
+                          <i class="fas fa-trash"></i>
+                      </button>
+                  </div>
             </div>
         </li>
     </ul>   
 </div>
 
 
+
+
+
+ 

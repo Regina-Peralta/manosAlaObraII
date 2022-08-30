@@ -1,0 +1,15 @@
+@import "/src/variables.scss"; 
+
+hr{
+    border: 2px noshade  $negro10;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+
+@media screen and (min-width: $ancho){
+    hr{
+        width: $ancho;
+        
+    }
+}

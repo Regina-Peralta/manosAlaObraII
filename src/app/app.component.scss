@@ -1,0 +1,17 @@
+
+@import "/src/variables.scss"; 
+
+
+@media screen and (min-width: $ancho){
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        div{
+            width: $ancho;
+        }
+
+    }
+ 
+ }
+ 

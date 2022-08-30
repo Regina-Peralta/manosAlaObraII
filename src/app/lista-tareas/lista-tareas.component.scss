@@ -1,0 +1,116 @@
+@import "/src/variables.scss"; 
+
+div{
+    display: flex;
+    ul {
+        list-style: none;
+        padding-left: 0px;
+        margin: 0px 24px;
+        width: $ancho;
+        li{
+            margin-bottom: 8px;
+            background-color: $negro10;
+            border-radius: 4px;
+            > div{
+                justify-content:space-between;
+                overflow: auto; 
+                p{
+                    //padding-left: 24px;
+                    margin-left: 8px;
+                    margin-right: 8px;
+                    text-align: left;
+                    font-size: 24px;   
+                }
+                div{
+                    button{
+                        margin-top: 16px;
+                        margin-bottom: 16px;
+                        margin-right: 4px;
+                        border-radius: 4px;
+                        width: 48px;
+                    } 
+                } 
+
+            }
+        }
+    }
+}
+
+ input[type=checkbox] {
+        accent-color: $blanco10;
+        width: 24px;
+        height: 24px;
+        margin-top: 32px;
+        margin-left: 8px;
+}
+
+    
+.completada{
+    text-decoration: line-through;
+}
+
+
+@media screen and (min-width: $ancho){
+    div{
+        //width: $ancho;
+    }
+}
+
+
+
+/* CUSTOM CHECKBOC PARA QUE QUEDE IGUAL AL DISEÑO
+    PRESENTADO
+
+Contenedor 
+    .container {
+        position: relative;
+        margin: auto 8px;
+        font-size: 24px;
+       
+    }
+
+
+    
+    /* escondemos el default checkbox 
+    
+
+    .checkmark {
+        position: absolute;
+        left: 4px;
+        top: 20px;
+        height: 24px;
+        width: 24px;
+        border: 1px solid black;
+
+    }
+    
+    /* creamos el marcador (escondido al no seleccionar) 
+    .checkmark::before {
+        content: "";
+        position: absolute;
+        display: block;
+
+    }
+    
+    /* mostramos el marcador al seleccionar 
+    input[type="checkbox"]:checked ~ .checkmark::before {
+      display: none;
+    }
+    
+    /* estilo del marcador 
+    .container .checkmark::before {
+        left: 8px;
+        top: 4px;
+        width: 5px;
+        height: 10px;
+        border: solid $negro;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg);
+    } 
+*/
+
+
+
+

@@ -3,7 +3,7 @@ import { Component, EventEmitter, OnInit, Output, ViewChild } from '@angular/cor
 @Component({
   selector: 'app-input-boton',
   templateUrl: './input-boton.component.html',
-  styleUrls: ['./input-boton.component.css']
+  styleUrls: ['./input-boton.component.scss']
 })
 export class InputBotonComponent implements OnInit {
 

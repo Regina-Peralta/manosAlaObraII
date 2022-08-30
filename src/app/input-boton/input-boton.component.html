@@ -1,6 +1,8 @@
 
 <div class="contenedor">
-    <input type="text" id="input-boton" #nuevaTarea>
-    <button type="submit" (click)="agregarTarea(nuevaTarea.value)"> ADD </button>
+    <input type="text" id="input-boton" #nuevaTarea placeholder="Escribe una nueva tarea...">
+    <button type="submit" (click)="agregarTarea(nuevaTarea.value)">
+        <i class="fa fa-check"></i>
+    </button>
 </div>
 

@@ -22,7 +22,11 @@
         margin: 8px;
     }
 }
-
+//Pasaje a modo oscuro
+.contenedor{
+    background-color: var(--btn-bg-color);
+}
+//------------
 @media screen and (min-width: $ancho){
     .contenedor{
         width: $ancho;

@@ -5,7 +5,7 @@
 <div class="contenedor">
     <ul>
         <li *ngFor="let tarea of tareas">
-            <div>
+            <div class="divtarea">
                   <div>
                         <input type="checkbox"  (click)="tareaCompletada(completarTarea)">
                         <p  #completarTarea class="tarea">{{tarea}}</p>

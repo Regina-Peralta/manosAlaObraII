@@ -1,7 +1,9 @@
 @import "/src/variables.scss"; 
 
+
 div{
     display: flex;
+    
     ul {
         list-style: none;
         padding-left: 0px;
@@ -9,9 +11,9 @@ div{
         width: $ancho;
         li{
             margin-bottom: 8px;
-            background-color: $negro10;
+            //background-color: $negro10;
             border-radius: 4px;
-            > div{
+            > .divtarea{
                 justify-content:space-between;
                 overflow: auto; 
                 p{
@@ -48,6 +50,14 @@ div{
 .completada{
     text-decoration: line-through;
 }
+
+
+//Pasaje a modo oscuro
+.divtarea{
+    border-radius: 4px;
+    background-color: var(--btn-bg-color);
+}
+//------------
 
 
 @media screen and (min-width: $ancho){

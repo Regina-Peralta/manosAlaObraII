@@ -1,14 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
-@import "variables";
+@import "variables.scss";
 
+body {
+  --text-color: #{$negro};
+  --bkg-color: #{$blanco}; 
+  --btn-txt-color: #{$negro}; 
+  --btn-bg-color: #{$negro10};
+  --btn-background: none;
+}
+body.dark-theme {
+  --text-color:  #{$blanco};
+  --bkg-color:  #{$negro}; 
+  --btn-txt-color: #{$blanco};
+  --btn-bg-color: #{$blanco10};
+}
 
-//body{
-   // background-color: $negro
-//}
+body {
+  background: var(--bkg-color);
+}
+
+h1, p{
+    color: var(--text-color);
+  }
+button {
+    color: var(--btn-txt-color);
+    background-color: var( --btn-background);
+    border:1px solid var(--text-color);
+}
+
+hr{
+    border-color: var(--btn-bg-color);
+}
+
 
 body{
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
-
 
